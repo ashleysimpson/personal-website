@@ -1,0 +1,13 @@
+{
+  "name": "jamstack-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ashleysimpson/jamstack-website.git",
+  "author": "ashleysimpson <ashley.simpson@mail.mcgill.ca>",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.20.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
