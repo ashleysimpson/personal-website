@@ -1,3 +1,5 @@
+$accentColor: darkblue;
+
 html,
 body {
   background-color: #111;
@@ -19,7 +21,7 @@ main {
 
   .diagonal {
     grid-area: 1 / 1 / 3 / 3;
-    color: blue;
+    color: $accentColor;
 
     // TODO: This should be removed
     z-index: 1;
@@ -27,6 +29,7 @@ main {
 
   .name {
     grid-area: 2 / 2 / 3 / 4;
+    color: $accentColor;
   }
 
   .aboutMe {
