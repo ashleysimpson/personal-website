@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import DiagonalAccent from '../components/diagonalAccent';
 import Name from '../components/name';
 import AboutMe from '../components/aboutMe';
+import Image from '../components/image';
 
 export default () => {
   return (
@@ -11,7 +12,7 @@ export default () => {
       <DiagonalAccent />
       <Name />
       <AboutMe />
-      <div className="box image"></div>
+      <Image />
       <div className="box reachOut"></div>
     </Layout>
   );
