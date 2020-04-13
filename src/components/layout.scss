@@ -1,0 +1,52 @@
+html,
+body {
+  background-color: #111;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+main {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 2rem);
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3rem 2fr 3rem;
+  grid-template-areas:
+    'diagonal .......'
+    '........ name'
+    'about image'
+    'about reachOut';
+  background-color: #444;
+
+  .diagonal {
+    grid-area: diagonal;
+  }
+
+  .name {
+    grid-area: name;
+  }
+
+  .aboutMe {
+    grid-area: about;
+  }
+
+  .image {
+    grid-area: image;
+  }
+
+  .reachOut {
+    grid-area: reachOut;
+  }
+
+  // To see the layout changes, should be removed
+  .box {
+    background-color: #888;
+    border-radius: 5px;
+  }
+}
