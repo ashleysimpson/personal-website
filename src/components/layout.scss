@@ -40,11 +40,7 @@ main {
 
   .reachOut {
     grid-area: 4 / 3 / 5 / 5;
-  }
-
-  // TODO: To see the layout changes, should be removed
-  .box {
-    background-color: #888;
-    border-radius: 5px;
+    color: $accentColor;
+    font-size: 1.5rem;
   }
 }
