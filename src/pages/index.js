@@ -1,15 +1,20 @@
 import React from 'react';
 
 import Layout from '../components/layout';
+import DiagonalAccent from '../components/diagonalAccent';
+import Name from '../components/name';
+import AboutMe from '../components/aboutMe';
+import Image from '../components/image';
+import ReachOut from '../components/reachOut';
 
 export default () => {
   return (
     <Layout>
-      <div className="box diagonal"></div>
-      <div className="box name"></div>
-      <div className="box aboutMe"></div>
-      <div className="box image"></div>
-      <div className="box reachOut"></div>
+      <DiagonalAccent />
+      <Name />
+      <AboutMe />
+      <Image />
+      <ReachOut />
     </Layout>
   );
 };

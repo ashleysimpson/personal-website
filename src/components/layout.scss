@@ -1,3 +1,5 @@
+$accentColor: darkblue;
+
 html,
 body {
   background-color: #111;
@@ -6,47 +8,39 @@ body {
 }
 
 main {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  width: calc(100vw - 2rem);
-  height: calc(100vh - 2rem);
+  width: 100vw;
+  height: 100vh;
 }
 
 .wrapper {
   display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 3rem 2fr 3rem;
-  grid-template-areas:
-    'diagonal .......'
-    '........ name'
-    'about image'
-    'about reachOut';
+  grid-template-columns: 20vw 30vw 15vw 35vw;
+  grid-template-rows: 30vh 10vh 50vh 10vh;
   background-color: #444;
 
   .diagonal {
-    grid-area: diagonal;
+    grid-area: 1 / 1 / 2 / 4;
+    color: $accentColor;
   }
 
   .name {
-    grid-area: name;
+    grid-area: 2 / 3 / 3 / 5;
+    color: $accentColor;
   }
 
   .aboutMe {
-    grid-area: about;
+    grid-area: 3 / 2 / 4 / 3;
+    color: $accentColor;
+    font-size: 1.5rem;
   }
 
   .image {
-    grid-area: image;
+    grid-area: 3 / 4 / 4 / 5;
   }
 
   .reachOut {
-    grid-area: reachOut;
-  }
-
-  // To see the layout changes, should be removed
-  .box {
-    background-color: #888;
-    border-radius: 5px;
+    grid-area: 4 / 3 / 5 / 5;
+    color: $accentColor;
+    font-size: 1.5rem;
   }
 }
