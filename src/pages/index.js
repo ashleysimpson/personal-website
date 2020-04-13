@@ -1,11 +1,12 @@
 import React from 'react';
 
 import Layout from '../components/layout';
+import DiagonalAccent from '../components/diagonalAccent';
 
 export default () => {
   return (
     <Layout>
-      <div className="box diagonal"></div>
+      <DiagonalAccent />
       <div className="box name"></div>
       <div className="box aboutMe"></div>
       <div className="box image"></div>
