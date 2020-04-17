@@ -6,8 +6,9 @@ const query = graphql`
   query {
     file {
       childImageSharp {
-        fixed(width: 425, height: 425) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 600, maxHeight: 600) {
+          aspectRatio
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -19,7 +20,7 @@ export default function Image() {
 
   return (
     <div className="image">
-      <Img fixed={data.file.childImageSharp.fixed} alt="Website Author Image" />
+      <Img fluid={data.file.childImageSharp.fluid} alt="Website Author Image" />
     </div>
   );
 }
