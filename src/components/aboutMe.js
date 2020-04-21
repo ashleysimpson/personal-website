@@ -4,9 +4,10 @@ export default function AboutMe() {
   return (
     <div className="aboutMe">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem
-        animi enim eius harum in aliquid similique sequi, facilis quis nostrum
-        provident voluptatum quia amet. Excepturi, quidem! Quod, saepe sed.
+        Hi! I am a full stack developer currently living in Montreal, Canada.
+        Feel free to reach out to me on LinkedIn if you want to connect. Also,
+        you can check out my Github profile to see any personal projects I am
+        currently working on. Take care :)
       </p>
     </div>
   );
