@@ -16,13 +16,12 @@ main {
 }
 
 .wrapper {
-  display: grid;
-  grid-template-rows: 20vh 20vh 50vh 10vh;
-  grid-template-columns: 20vw 30vw 15vw 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: $background;
 
   .diagonal {
-    grid-area: 1 / 1 / 3 / 4;
     color: $accent;
 
     svg {
@@ -31,24 +30,22 @@ main {
   }
 
   .name {
+    align-self: center;
     font-family: 'Bitter', serif;
-    font-size: 2.5rem;
-    grid-area: 2 / 3 / 3 / 5;
+    font-size: 2rem;
     color: $textNormal;
   }
 
   .aboutMe {
     font-family: 'Open Sans', sans-serif;
-    font-size: 2.5rem;
-    grid-area: 3 / 1 / 4 / 3;
+    font-size: 2rem;
     color: $textNormal;
-    margin: 3.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
 
   .image {
-    grid-area: 3 / 3 / 4 / 5;
-    margin-bottom: 3rem;
-    margin-right: 3rem;
+    margin-top: -4rem;
 
     :first-child {
       max-width: 100%;
@@ -58,13 +55,14 @@ main {
 
   .reachOut {
     font-family: 'Bitter', serif;
-    grid-area: 4 / 3 / 5 / 5;
     color: $accent;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-top: -4rem;
 
     display: flex;
     justify-content: space-between;
-    margin-right: 3.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 
     a {
       color: inherit; /* blue colors for links too */
@@ -73,6 +71,90 @@ main {
       &:hover {
         color: $textHover;
       }
+    }
+  }
+}
+
+@media (min-width: 920px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: 20vh 20vh 50vh 10vh;
+    grid-template-columns: 30vw 30vw 10vw 30vw;
+
+    .diagonal {
+      grid-area: 1 / 1 / 3 / 3;
+    }
+
+    .name {
+      font-family: 'Bitter', serif;
+      font-size: 2.5rem;
+      grid-area: 2 / 2 / 3 / 5;
+    }
+
+    .aboutMe {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2rem;
+      grid-area: 3 / 1 / 4 / 3;
+      margin: 3.5rem;
+    }
+
+    .image {
+      grid-area: 3 / 3 / 4 / 5;
+      margin-bottom: 0;
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .reachOut {
+      font-family: 'Bitter', serif;
+      grid-area: 4 / 1 / 5 / 5;
+      font-size: 3rem;
+      margin-top: 0;
+      margin-left: 3.5rem;
+      margin-right: 3.5rem;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: 20vh 20vh 50vh 10vh;
+    grid-template-columns: 20vw 30vw 15vw 35vw;
+
+    .diagonal {
+      grid-area: 1 / 1 / 3 / 4;
+    }
+
+    .name {
+      font-family: 'Bitter', serif;
+      font-size: 2.5rem;
+      grid-area: 2 / 3 / 3 / 5;
+    }
+
+    .aboutMe {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.5rem;
+      grid-area: 3 / 1 / 4 / 3;
+      margin: 3.5rem;
+    }
+
+    .image {
+      grid-area: 3 / 3 / 4 / 5;
+      margin-bottom: 3rem;
+      margin-right: 3rem;
+      margin-top: 0;
+    }
+
+    .reachOut {
+      font-family: 'Bitter', serif;
+      grid-area: 4 / 3 / 5 / 5;
+      font-size: 3rem;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 3.5rem;
     }
   }
 }
