@@ -32,13 +32,13 @@ main {
   .name {
     align-self: center;
     font-family: 'Bitter', serif;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: $textNormal;
   }
 
   .aboutMe {
     font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: $textNormal;
     margin-right: 2rem;
     margin-left: 2rem;
@@ -51,13 +51,18 @@ main {
       max-width: 100%;
       max-height: 100%;
     }
+
+    img {
+      clip-path: circle(30% at 50% 50%);
+    }
   }
 
   .reachOut {
     font-family: 'Bitter', serif;
     color: $accent;
-    font-size: 2.5rem;
-    margin-top: -4rem;
+    font-size: 1.6rem;
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
 
     display: flex;
     justify-content: space-between;
@@ -93,7 +98,7 @@ main {
 
     .aboutMe {
       font-family: 'Open Sans', sans-serif;
-      font-size: 2rem;
+      font-size: 1.8rem;
       grid-area: 3 / 1 / 4 / 3;
       margin: 3.5rem;
     }
@@ -136,7 +141,7 @@ main {
 
     .aboutMe {
       font-family: 'Open Sans', sans-serif;
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       grid-area: 3 / 1 / 4 / 3;
       margin: 3.5rem;
     }
