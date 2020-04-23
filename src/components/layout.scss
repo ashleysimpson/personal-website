@@ -34,6 +34,8 @@ main {
     font-family: 'Bitter', serif;
     font-size: 1.3rem;
     color: $textNormal;
+
+    border-bottom: 2px solid $accent;
   }
 
   .aboutMe {
@@ -42,6 +44,8 @@ main {
     color: $textNormal;
     margin-right: 2rem;
     margin-left: 2rem;
+
+    border-bottom: 2px solid $accent;
   }
 
   .image {
