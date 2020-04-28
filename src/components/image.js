@@ -22,8 +22,15 @@ export default function Image() {
     <div className="image">
       <Img
         fluid={data.file.childImageSharp.fluid}
-        style={{ clipPath: 'circle(30% at 50% 50%)' }}
-        imgStyle={{ objectFit: 'contain' }}
+        style={{
+          height: '100%',
+        }}
+        imgStyle={{
+          objectFit: 'cover',
+          clipPath: 'circle(50%)',
+          height: '80%',
+          width: 'auto',
+        }}
         loading={'eager'}
         alt="Website Author Image"
       />

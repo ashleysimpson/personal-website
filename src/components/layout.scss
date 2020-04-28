@@ -44,21 +44,10 @@ main {
     color: $textNormal;
     margin-right: 2rem;
     margin-left: 2rem;
-
-    border-bottom: 2px solid $accent;
   }
 
   .image {
     margin-top: -4rem;
-
-    :first-child {
-      max-width: 100%;
-      max-height: 100%;
-    }
-
-    img {
-      clip-path: circle(30% at 50% 50%);
-    }
   }
 
   .reachOut {
@@ -109,11 +98,6 @@ main {
 
     .image {
       grid-area: 3 / 3 / 4 / 5;
-      margin-bottom: 0;
-      margin-right: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
     }
 
     .reachOut {
@@ -152,8 +136,6 @@ main {
 
     .image {
       grid-area: 3 / 3 / 4 / 5;
-      margin-bottom: 3rem;
-      margin-right: 3rem;
       margin-top: 0;
     }
 
