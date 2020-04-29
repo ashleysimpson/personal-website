@@ -24,12 +24,17 @@ export default function Image() {
         fluid={data.file.childImageSharp.fluid}
         style={{
           height: '100%',
+          position: 'relative',
         }}
         imgStyle={{
-          objectFit: 'cover',
+          objectFit: 'contain',
           clipPath: 'circle(50%)',
-          height: '80%',
+          height: '65%',
           width: 'auto',
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
         }}
         loading={'eager'}
         alt="Website Author Image"
