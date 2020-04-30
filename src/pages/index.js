@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../components/layout';
 import DiagonalAccent from '../components/diagonalAccent';
@@ -9,12 +10,19 @@ import ReachOut from '../components/reachOut/reachOut';
 
 export default () => {
   return (
-    <Layout>
-      <DiagonalAccent />
-      <Name />
-      <AboutMe />
-      <Image />
-      <ReachOut />
-    </Layout>
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Ashley Simpson</title>
+        <link rel="canonical" href="https://ashleysimpson.dev" />
+      </Helmet>
+      <Layout>
+        <DiagonalAccent />
+        <Name />
+        <AboutMe />
+        <Image />
+        <ReachOut />
+      </Layout>
+    </>
   );
 };
