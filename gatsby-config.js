@@ -23,8 +23,21 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Ashley Simpson`,
+        short_name: `Ashley Simpson`,
+        start_url: `/`,
+        background_color: `#1b2a41`,
+        theme_color: `#e6b542`,
+        display: `standalone`,
+        icon: `src/images/ashleysimpson.png`,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
   ],
 };
