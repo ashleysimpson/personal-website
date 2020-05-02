@@ -15,6 +15,7 @@ export default () => {
         <meta charSet="utf-8" />
         <title>Ashley Simpson</title>
         <link rel="canonical" href="https://ashleysimpson.dev" />
+        <html lang="en" />
       </Helmet>
       <Layout>
         <DiagonalAccent />
