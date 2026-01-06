@@ -1,0 +1,16 @@
+'use client';
+
+import React from 'react';
+
+export default function AboutMe(): React.ReactElement {
+  return (
+    <div className="aboutMe">
+      <p>
+        I'm a full stack developer currently living in Vancouver, Canada. Feel
+        free to reach out on LinkedIn if you want to connect. Also, you can
+        check out my GitHub profile to see any personal projects I am currently
+        working on.
+      </p>
+    </div>
+  );
+}

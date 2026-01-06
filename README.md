@@ -6,7 +6,7 @@ Simply a personal website for myself. I hope to extend upon this over time but f
 
 ## Technical Stack
 
-- Using [GatsbyJS](https://www.gatsbyjs.org/)
+- Using [Next.js](https://nextjs.org/)
 - [Netlify](https://www.netlify.com/) for hosting
 
 ## Design Inspiration
