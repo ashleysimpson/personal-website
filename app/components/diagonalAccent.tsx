@@ -4,8 +4,9 @@ import React from 'react';
 
 export default function DiagonalAccent(): React.ReactElement {
   return (
-    <div className="diagonal">
+    <div className="diagonal text-accent tablet:[grid-area:1/1/3/3] desktop:[grid-area:1/1/3/4]">
       <svg
+        className="block w-full h-full [mask-image:linear-gradient(-10deg,black,white,transparent)] [webkit-mask-image:linear-gradient(-10deg,black,white,transparent)]"
         width="100%"
         height="100%"
         viewBox="0 0 200 100"

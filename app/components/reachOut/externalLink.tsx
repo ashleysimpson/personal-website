@@ -14,7 +14,12 @@ export default function ExternalLink({
   text,
 }: ExternalLinkProps): React.ReactElement {
   return (
-    <a href={href} rel="noopener noreferrer" target="_blank">
+    <a
+      href={href}
+      rel="noopener noreferrer"
+      target="_blank"
+      className="text-inherit no-underline hover:text-textHover"
+    >
       {text} {icon}
     </a>
   )

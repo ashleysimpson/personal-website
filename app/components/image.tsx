@@ -5,23 +5,14 @@ import Image from 'next/image';
 
 export default function ProfileImage(): React.ReactElement {
   return (
-    <div className="image">
+    <div className="image -mt-16 relative h-full tablet:[grid-area:3/3/4/5] desktop:[grid-area:3/3/4/5]">
       <Image
         src="/ashleysimpson.png"
         alt="Website Author Image"
         width={600}
         height={600}
         priority
-        style={{
-          objectFit: 'contain',
-          clipPath: 'circle(50%)',
-          height: '65%',
-          width: 'auto',
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-        }}
+        className="object-contain h-[65%] w-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 [clip-path:circle(50%)]"
       />
     </div>
   );

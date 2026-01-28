@@ -12,8 +12,15 @@ module.exports = {
         accent: 'rgba(230, 181, 66, 1)',
       },
       fontFamily: {
-        bitter: ['Bitter', 'serif'],
-        opensans: ['Open Sans', 'sans-serif'],
+        bitter: ['var(--font-bitter)'],
+        opensans: ['var(--font-opensans)'],
+      },
+      screens: {
+        'tablet': '920px',
+        'desktop': '1400px',
+        'h-md': { 'raw': '(max-height: 720px)' },
+        'h-sm': { 'raw': '(max-height: 650px)' },
+        'h-xs': { 'raw': '(max-height: 400px)' },
       },
     },
   },
