@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from 'react';
 
 interface ExternalLinkProps {
-  icon: ReactNode
-  href: string
-  text: string
+  icon: ReactNode;
+  href: string;
+  text: string;
 }
 
 export default function ExternalLink({
@@ -18,9 +18,9 @@ export default function ExternalLink({
       href={href}
       rel="noopener noreferrer"
       target="_blank"
-      className="text-inherit no-underline hover:text-textHover"
+      className="text-inherit no-underline hover:text-textHover flex items-center gap-3"
     >
       {text} {icon}
     </a>
-  )
+  );
 }

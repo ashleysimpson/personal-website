@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
@@ -16,13 +14,10 @@ module.exports = {
         opensans: ['var(--font-opensans)'],
       },
       screens: {
-        'tablet': '920px',
-        'desktop': '1400px',
-        'h-md': { 'raw': '(max-height: 720px)' },
-        'h-sm': { 'raw': '(max-height: 650px)' },
-        'h-xs': { 'raw': '(max-height: 400px)' },
+        tablet: '920px',
+        desktop: '1440px',
       },
     },
   },
   plugins: [],
-}
+};
