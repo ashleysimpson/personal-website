@@ -1,27 +1,27 @@
 {
   "name": "jamstack-website",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:ashleysimpson/jamstack-website.git",
   "author": "ashleysimpson <ashley.simpson@mail.mcgill.ca>",
   "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop",
-    "build": "gatsby build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "gatsby": "^2.20.2",
-    "gatsby-image": "^2.3.2",
-    "gatsby-plugin-manifest": "^2.4.1",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
-    "gatsby-plugin-react-helmet": "^3.3.0",
-    "gatsby-plugin-sass": "^2.2.1",
-    "gatsby-plugin-sharp": "^2.5.4",
-    "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-sharp": "^2.4.4",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0"
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.10",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.9.3"
   }
 }

@@ -1,7 +1,7 @@
-# Local Netlify folder
-.netlify
+.next
 
 .cache
-public
 .env
 yarn.lock
+
+node_modules

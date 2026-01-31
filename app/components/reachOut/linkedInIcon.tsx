@@ -1,6 +1,4 @@
-import React from 'react';
-
-export default function LinkedInIcon() {
+export default function LinkedInIcon(): React.ReactElement {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
