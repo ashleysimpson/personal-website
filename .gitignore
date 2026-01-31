@@ -1,7 +1,6 @@
 .next
 
 .cache
-public
 .env
 yarn.lock
 
