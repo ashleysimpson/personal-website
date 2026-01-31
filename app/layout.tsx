@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bitter.variable} ${openSans.variable}`}>
       <body className="bg-background">
-        <main className="flex flex-col justify-between w-screen h-screen tablet:grid tablet:grid-rows-[20vh_20vh_50vh_10vh] tablet:grid-cols-[30vw_30vw_10vw_30vw] desktop:grid-rows-[20vh_20vh_50vh_10vh] desktop:grid-cols-[20vw_30vw_15vw_35vw]">
+        <main className="flex flex-col justify-between w-screen min-h-screen tablet:h-screen tablet:grid tablet:grid-rows-[20vh_20vh_50vh_10vh] tablet:grid-cols-[30vw_30vw_10vw_30vw] desktop:grid-rows-[20vh_20vh_50vh_10vh] desktop:grid-cols-[20vw_30vw_15vw_35vw]">
           {children}
         </main>
       </body>
