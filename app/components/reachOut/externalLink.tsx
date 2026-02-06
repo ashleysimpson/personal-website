@@ -16,7 +16,7 @@ export default function ExternalLink({
       href={href}
       rel="noopener noreferrer"
       target="_blank"
-      className="text-inherit no-underline hover:text-textHover flex items-center gap-3"
+      className="text-inherit no-underline hover:text-textHover flex items-center gap-2"
     >
       {text} {icon}
     </a>
